@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<title>Academy</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+  <link rel="stylesheet" type="text/css" href="css/site.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="container">
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">STUDENT DESK <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a id="srf" href="#">STUDENT REGISTRATION FORM</a></li>
+            <li><a id="" href="#">UPDATE STUDENT PROFILE</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">EMPLOYEE DESK <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a id="erf" href="#">EMPLOYEE REGISTRATION FORM</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">VISITOR DESK <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a id="vlnk" href="#">VISITOR ENTRY FORM</a></li>
+          </ul>
+        </li>        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUTSOURCED SERVICE DESK <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a id="ostlnk" href="#">SERVICE PROVIDER REGISTRATION FORM</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div><!-- container -->
+  </nav><!-- navbar closed -->
+  </div><!-- container -->
+<br>
+<br>
+<br>
+<!-- <div class="container">
+<p align="right"><a href="master.php"><img src="img/back.png" class="bck"></a></p>
+</div> -->
+
+<!-- student registration form -->
+<div id="stu_reg" class="container">
+  <h3 class="page-header">STUDENT DESK</h3>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">Student Registration Form</h4>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Basic Information</h4>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table borderless table-condensed">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                      <tr>
+                        <td><label for="sid">Firstname:</label></td>
+                        <td><input type="text" id="sid" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sid">Lastname:</label></td>
+                        <td><input type="text" id="sid" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sid">Gender:</label></td>
+                        <td>
+                          <select class="form-control input-sm eqtxt">
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>    
+                        <td><label for="sdob">Date Of Birth:</label></td>
+                        <td>                  
+                            <div class="input-group date form_datetime eqtxt" data-date="2012-12-21T15:25:00Z">
+                            <input id="sdob" type="text" class="form-control input-sm eqtxt" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                            </div>   
+                        </td>
+                      </tr>
+                      <tr>    
+                        <td><label for="sdob">Place Of Birth:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sname">Nationality:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sname">Language Spoken at Home:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sdob">Other Languages Spoken:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sdob">Home Address:</label></td>
+                        <td><textarea class="form-control input-sm eqtxt"></textarea></td>
+                      </tr> 
+                      <tr>
+                        <td><label for="sdob">Phone No.:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>  
+                      <tr>
+                        <td><label for="sdob">Email-ID:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sdob">Standard Applying for:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="smot">ExtraCurricular Activities:</label></td>
+                        <td><input type="text" id="smot" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="srd">Registration Date:</label></td>
+                        <td>
+                            <div class="input-group date form_datetime eqtxt" data-date="2012-12-21T15:25:00Z">
+                            <input id="srd" type="text" class="form-control input-sm eqtxt" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                            </div>   
+                        </td>
+                      </tr> 
+                    </div>
+                  </form><!-- form -->
+                </table><!-- table closed -->
+              </div><!-- table-responsive -->
+            </div><!-- panel body closed -->
+          </div><!-- panel closed -->
+        </div><!-- column closed -->
+        
+     
+        
+    <div class="col-md-10 col-md-offset-1">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">School History</h4>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table borderless table-condensed">
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <tr>
+                    <td><label for="sdob">Present School:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr> 
+                  <tr>
+                    <td><label for="sdob">Address:</label></td>
+                    <td><textarea class="form-control input-sm eqtxt"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sdob">Dates attended:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sdob">Standards:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sdob">Phone No.:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sdob">Language of Instruction:&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr> 
+                </div>
+              </form><!-- form -->
+            </table><!-- table closed -->
+          </div><!-- table-responsive -->
+        </div><!-- panel body closed -->
+      </div><!-- panel closed -->
+    </div><!-- column closed -->
+
+
+    <div class="col-md-10 col-md-offset-1">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">Family Information</h4>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table borderless table-condensed">
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <tr>
+                    <td><label for="sfat">Father Name:</label></td>
+                    <td><input type="text" id="sfat" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sfat">Mother Name:</label></td>
+                    <td><input type="text" id="sfat" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sfat">Home address <br>(if different from applicant)</label></td>
+                    <td><textarea class="form-control input-sm eqtxt"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sdob">Phone No.:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr>  
+                  <tr>
+                    <td><label for="sdob">Email-ID:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sfat">Guardian Name:</label></td>
+                    <td><input type="text" id="sfat" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sfat">Home address <br>(if different from applicant)</label></td>
+                    <td><textarea class="form-control input-sm eqtxt"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sdob">Phone No.:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr>  
+                  <tr>
+                    <td><label for="sdob">Email-ID:</label></td>
+                    <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                </div>
+              </form><!-- form -->
+            </table><!-- table closed -->
+          </div><!-- table-responsive -->
+        </div><!-- panel body closed -->
+      </div><!-- panel closed -->
+    </div><!-- column closed -->
+
+
+      <div class="col-md-10 col-md-offset-1">
+        <div class="table-responsive">
+          <table class="table borderless table-condensed">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <tr align="center">
+                  <td colspan="2">
+                    <a href="#" id="subbtn" type="button" class="btn btn-primary logbtn">Submit</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-primary logbtn">Reset</button>
+                  </td>
+                </tr>
+              </div>
+            </form>
+          </table>
+        </div> 
+      </div>
+    </div><!-- row closed -->
+  </div><!-- Panel closed -->
+</div><!-- container closed -->
+
+
+
+<!-- Employee registration form -->
+<div id="emp_reg" class="container">
+  <h3 class="page-header">EMPLOYEE DESK</h3>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">Employee Registration Form</h4>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Basic Information</h4>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table borderless table-condensed">
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <tr>
+                      <td><label for="eid">Employee_ID:</label></td>
+                      <td><input type="text" id="eid" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="ename">First Name:</label></td>
+                      <td><input type="text" id="ename" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="lname">Last Name:</label></td>
+                      <td><input type="text" id="lname" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="edob">Date Of Birth:</label></td>
+                      <td>                  
+                          <div class="input-group date form_datetime eqtxt" data-date="2012-12-21T15:25:00Z">
+                          <input id="edob" type="text" class="form-control input-sm eqtxt" value="" readonly>
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                          </div>   
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="pob">Place of Birth:</label></td>
+                      <td><input type="text" id="pob" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="egen">Gender:</label></td>
+                      <td>
+                        <select class="form-control input-sm eqtxt" id="egen">
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="efat">Father's Name:</label></td>
+                      <td><input type="text" id="efat" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="emot">Mother's Name:</label></td>
+                      <td><input type="text" id="emot" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="epadd">Permanent Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;</label></td>
+                      <td><input type="text" id="epadd" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="etadd">Temporary Address:</label></td>
+                      <td><input type="text" id="etadd" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="ecno">Contact No.:</label></td>
+                      <td><input type="text" id="ecno" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="eemail">Email-ID:</label></td>
+                      <td><input type="text" id="eemail" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                     <td><label for="edor">Registration Date:</label></td>
+                      <td><input type="text" id="edor" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                 </div><!-- form-group -->
+                </table><!-- table closed -->
+              </div><!-- table-responsive -->
+            </div><!-- column closed -->
+
+            <div class="panel-heading">
+              <h4 class="panel-title">Education Details</h4>
+            </div>
+            <div class="panel-body">
+              <div class="table-responsive">
+                <table class="table borderless table-condensed">
+                  <div class="form-group">
+                    <tr>
+                      <td><label for="educ">Education:</label></td>
+                      <td><input type="text" id="educ" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="spcl">Specialization:</label></td>
+                      <td><input type="text" id="spcl" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="extra">Extracurricular Activities:</label></td>
+                      <td><input type="text" id="extra" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="goi">Games of Interest:</label></td>
+                      <td><input type="text" id="goi" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="achive">Achievements (if any):</label></td>
+                      <td><input type="text" id="achive" class="form-control input-sm eqtxt"></td>
+                    </tr>
+                    <tr align="center">
+                      <td colspan="2">
+                        <a href="#" id="subbtn" type="button" class="btn btn-primary logbtn">Submit</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset" class="btn btn-primary logbtn">Reset</button>
+                      </td>
+                    </tr>              
+                  </div><!-- form-group -->
+                </form><!-- form -->
+              </table><!-- table closed -->
+            </div><!-- table-responsive -->
+          </div><!-- column closed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  </div>
+  </div>
+
+
+
+<!-- Visitor Entry Form -->
+<div id="visitor" class="container">
+  <h3 class="page-header">VISITOR DESK</h3>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">Visitor Entry Registration Form</h4>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Visitor Details</h4>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table borderless table-condensed">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                  <tr>
+                    <td><label for="vnme">Visitor Name:</label></td>
+                    <td><input type="text" id="vnme" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="vmono">Mobile No.:</label></td>
+                    <td><input type="text" id="vmono" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="qry">Query / Message:</label></td>
+                    <td><textarea id="qry" cols="60" rows="9"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr align="center">
+                    <td colspan="2"><a id="vitbtn" href="#" type="button" class="btn btn-primary logbtn">Submit</a>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button href="#" type="reset" class="btn btn-primary logbtn">Reset</button></td>
+                  </tr>
+                </div>
+              </form>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Outsourced Service Desk -->
+<div id="ost" class="container">
+  <h3 class="page-header">OUTSOURCED SERVICE DESK</h3>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">Service Provider Registration Form</h4>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Service Provider Entry</h4>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table borderless table-condensed">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                  <tr>
+                    <td><label for="spname" >Service Provider Name:</label></td>
+                    <td><input id="spname" type="text" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="stype">Service Type:</label></td>
+                    <td>
+                      <select id="stype" class="form-control input-sm eqtxt">
+                        <option>Bus Service</option>
+                        <option>Taxi Service</option>
+                        <option>Rikshaw Service</option>
+                        <option>Cleaning Service</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="con">Tenure of Service:</label></td>
+                    <td>
+                    <select id="con" class="form-control input-sm eqtxt">
+                        <option>Monthly</option>
+                        <option>Three Months</option>
+                        <option>Six Months</option>
+                        <option>Yearly</option>
+                        <option value="cont">Contract</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label class="ctd" for="contd">Contract Duration:</label></td>
+                    <td><input type="text" id="contd" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="cos">Cost of Service:</label></td>
+                    <td><input id="cos" type="text" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="sdate">Start Date:</label></td>
+                    <td><input id="sdate" type="text" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="edate">End Date:</label></td>
+                    <td><input id="edate" type="text" class="form-control input-sm eqtxt"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr align="center">
+                    <td colspan="2"><a id="osdbtn" href="#" type="button" class="btn btn-primary logbtn">Submit</a>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button href="#" type="reset" class="btn btn-primary logbtn">Reset</button></td>
+                  </tr>
+                </div>
+              </form>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- student registration slip -->
+<div id="stu_slip" class="container">
+  <h3 class="page-header">STUDENT DESK</h3>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">Student Registration Form</h4>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Student Registration Slip</h4>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table borderless table-condensed">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                      <tr>
+                        <td><label for="sid">Student ID:</label></td>
+                        <td><input type="text" id="sid" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sid">Firstname:</label></td>
+                        <td><input type="text" id="sid" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sid">Lastname:</label></td>
+                        <td><input type="text" id="sid" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>    
+                        <td><label for="sdob">Date Of Birth:</label></td>
+                        <td>                  
+                            <div class="input-group date form_datetime eqtxt" data-date="2012-12-21T15:25:00Z">
+                            <input id="sdob" type="text" class="form-control input-sm eqtxt" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                            </div>   
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label for="sfat">Father Name:</label></td>
+                        <td><input type="text" id="sfat" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sfat">Mother Name:</label></td>
+                        <td><input type="text" id="sfat" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="sdob">Standard Applying for:</label></td>
+                        <td><input type="text" id="sname" class="form-control input-sm eqtxt"></td>
+                      </tr>
+                      <tr>
+                        <td><label for="srd">Registration Date:</label></td>
+                        <td>
+                            <div class="input-group date form_datetime eqtxt" data-date="2012-12-21T15:25:00Z">
+                            <input id="srd" type="text" class="form-control input-sm eqtxt" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                            </div>   
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                      </tr>
+                      <tr align="left">
+                        <td colspan="2"><label for="srd">Sign:</label></td>
+                      </tr>
+                      <tr align="left">
+                        <td colspan="2"><label for="srd">Name:</label></td>
+                      </tr>
+                      <tr align="center">
+                        <td colspan="2">
+                          <a href="#" id="subbtn" type="button" class="btn btn-primary logbtn" onClick="window.print()">Print</a>
+                        </td>
+                      </tr> 
+                    </div>
+                  </form><!-- form -->
+                </table><!-- table closed -->
+              </div><!-- table-responsive -->
+            </div><!-- panel body closed -->
+          </div><!-- panel closed -->
+        </div><!-- column closed -->
+
+    </div><!-- row closed -->
+  </div><!-- Panel closed -->
+</div><!-- container closed -->
+
+  
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/sweet-alert.min.js"></script>
+  <script type="text/javascript" src="js/academy.js"></script>
+
+
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - HH:ii P",
+        showMeridian: true,
+        autoclose: true,
+        todayBtn: true
+    });
+</script>  
+
+</body>
+</html>

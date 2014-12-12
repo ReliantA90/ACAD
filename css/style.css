@@ -1,0 +1,127 @@
+.block
+{
+	width: 100%;
+	min-height: 660px;
+}
+/*navigation bar formatiing*/
+.navbar-default
+{
+	color: #fff;
+	background: #5D3F6A;
+	
+}
+
+.navbar-default .navbar-brand {
+   color:#fff;
+}
+
+.navbar .nav li>a
+{
+	color:#fff;
+}
+
+.navbar .nav li>a:hover {
+    background-color: #26A65B;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .nav .open>a, .navbar-default .nav .open>a:hover, .navbar-default .nav .open>a:focus {
+   background-color:transparent;
+}
+  /*navbar dropdown-menu color*/
+ul.dropdown-menu {
+    background-color: #5D3F6A;
+}
+/*navbar dropdown-menu li>a:hover color*/
+ul.dropdown-menu li>a:hover {
+    background-color: #B54646;
+} 
+
+/*index page heading*/
+.idxhd
+{
+	font-family: 'Philosopher', sans-serif;
+	text-align: center;
+}
+/*bootstrap datetimepicker*/
+.datetimepicker
+{
+    background-color: #fff;
+    color: #000;
+}
+/*equal textbox*/
+.eqtxt
+{
+	width:300px;
+}
+/*background-color*/
+.bg
+{
+	background: #044F67;
+}
+/*table without border*/
+.borderless tbody tr td
+{
+	border: none;
+}
+/*Login Heading*/
+.head
+{
+	color: #fff;
+	text-align: center;
+}
+/*table label color*/
+.lab
+{
+	color: #fff;
+}
+/*buttons width*/
+.logbtn
+{
+	width: 100px;
+}
+.form
+{
+	background:#EEEEEE;
+	border-radius: 10px;
+}
+/*footer formatting*/
+.bottom
+{
+	margin-bottom: -20px;
+}
+/*master page image formatting*/
+#bgimg
+{
+	width: 35%;
+	height:auto;
+}
+/*back button coding*/
+.bck
+{
+	width: 100px;
+	height: auto;
+}
+/*Library Login panel formatting*/
+#llog
+{
+	padding-top: 200px;
+}
+
+/*manage members formatting*/
+.manage_mem
+{
+	color:#234;
+	/*text-decoration: underline;*/
+	font-size: 0.5em;
+}
+/*library image formatting*/
+.lib_img
+{
+	height: 580px;
+}
